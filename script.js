@@ -11,5 +11,7 @@ console.log(typeof fullPrice);
 console.log(typeof adaptive);
 console.log(screens.length);
 console.log('Стоимость разработки сайта ' + screenPrice + '₽');
-console.log(screens.toLowerCase());
+let arr = screens.toLowerCase().toString().split("");
+console.log(arr);
 console.log(fullPrice * (rollback / 100));
+
