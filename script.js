@@ -1,9 +1,9 @@
-const title = 'Название проекта';
-const screens = "Простые, Сложные, Интерактивные";
-const screenPrice = 300;
-const rollback = 99;
-const fullPrice = 100000;
-const adaptive = true;
+let title = 'Название проекта';
+let screens = "Простые, Сложные, Интерактивные";
+let screenPrice = 300;
+let rollback = 99;
+let fullPrice = 100000;
+let adaptive = true;
 
 
 console.log(typeof title);
