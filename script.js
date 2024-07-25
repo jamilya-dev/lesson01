@@ -9,6 +9,7 @@ const service2 = prompt('Какой дополнительный тип услу
 const servicePrice2 = prompt('Сколько это будет стоить?');
 const fullPrice = Number(screenPrice) + Number(servicePrice1) + Number(servicePrice2);
 const servicePercentPrice = Math.ceil(fullPrice - rollback);
+
 switch (true) {
   case fullPrice >= 30000:
     console.log('Даем скидку в 10%');
@@ -23,4 +24,5 @@ switch (true) {
     console.log('Что то пошло не так');
     break
 }
+
 console.log(servicePercentPrice);
