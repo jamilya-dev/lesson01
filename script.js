@@ -11,6 +11,14 @@ const appData = {
   servicePercentPrice: 0,
   service1: '',
   service2: '',
+  start: function () {
+    appData.asking();
+    appData.allServicePrices = appData.getAllServicePrices();
+    appData.fullPrice = appData.getFullPrice();
+    appData.servicePercentPrice = appData.getServicePercentPrices();
+    appData.title = appData.getTitle();
+    appData.logger();
+  },
   asking: function () {
     appData.title = prompt('Как называется ваш проект?', 'Калькулятор верстки');
     appData.screens = prompt('Какие типы экранов нужно разработать?', 'Простые, Сложные, Интерактивные');
@@ -66,14 +74,6 @@ const appData = {
         return 'Что то пошло не так';
         break
     }
-  },
-  start: function () {
-    appData.asking();
-    appData.allServicePrices = appData.getAllServicePrices();
-    appData.fullPrice = appData.getFullPrice();
-    appData.servicePercentPrice = appData.getServicePercentPrices();
-    appData.title = appData.getTitle();
-    appData.logger();
   },
   logger: function () {
     for (let key in appData) {
